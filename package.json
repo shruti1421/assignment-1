@@ -4,7 +4,8 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "node server.js",
+    "server": "nodemon server.js"
   },
   "author": "Smriti Naik",
   "license": "ISC",
