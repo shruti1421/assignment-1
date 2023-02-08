@@ -41,17 +41,17 @@ class Magazine {
 const app = express();
 app.use(express.json());
 
-let json = csvToJson.getJsonFromCsv("./src/Authors.csv") ;
+let json = csvToJson.getJsonFromCsv("./Authors.csv") ;
 const authors = [];
 for(let i=0; i<json.length;i++){
     authors.push(json[i]);
 }
-json =csvToJson.getJsonFromCsv("./src/Books.csv");
+json =csvToJson.getJsonFromCsv("./Books.csv");
 const booksAndMagazines = [];
 for(let i=0; i<json.length;i++){
     booksAndMagazines.push(json[i]);
 }
-json = csvToJson.getJsonFromCsv("./src/Magazines.csv");
+json = csvToJson.getJsonFromCsv("./Magazines.csv");
 for(let i=0; i<json.length;i++){
     booksAndMagazines.push(json[i]);
 }
